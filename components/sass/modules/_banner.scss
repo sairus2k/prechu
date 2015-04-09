@@ -1,3 +1,67 @@
 .banner {
-	background: $darkGray;
-}
+  @include backImage("../images/background.png");
+  position: relative;
+  overflow: auto;
+  max-height: 420px;
+  .unslider-arrow {
+  	position: absolute;
+  	top: 40%;
+  	z-index: 10;
+  	&.prev {
+  		left: 5%;
+  	} //prev
+  	&.next {
+  		right: 5%
+  	} //next
+  } //unslider-arrow
+  ul {
+    list-style: none;
+  } //ul
+  ul li {
+    float: left;
+  } //ul li
+  figure {
+    @include pie-clearfix;
+    div {
+      float: left;
+      text-align: center;
+      width: 50%;
+    } //div
+    img {
+      height: 420px;
+      padding: 35px;
+    } //img
+ 
+  } //figure
+  figcaption {
+    float: right;
+    color: $light;
+    font-weight: $thin;
+    line-height: $xxxlarge;
+    width: 50%;
+    padding-top: 140px;
+    h1 {
+      font-weight: $thin;
+      line-height: inherit;
+      padding-bottom: 10px;
+    }
+    p {
+      font-size: $large;
+      line-height: inherit;
+    } //p
+    a {
+      background-color: $blue;
+      border-radius: 2px;
+      display: block;
+      width: 172px;
+      height: 41px;
+      text-align: center;
+      font-size: $xregular;
+      margin: 25px 15px;
+    } //a
+    i {
+      margin-right: 10px;
+      font-size: 23px;
+    } //i
+  } //figcaption
+} //banner

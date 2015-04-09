@@ -29,7 +29,8 @@ if (env === 'development') {
 }
 
 jsSources = [
-'components/scripts/jqloader.js',
+//'components/scripts/jqloader.js',
+'components/scripts/unslider.min.js',
 'components/scripts/script.js'
 ];
 sassSources = ['components/sass/style.scss'];

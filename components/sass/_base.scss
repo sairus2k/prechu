@@ -7,3 +7,8 @@ body {
 #{headings(1, 3)} {
 	font: $headFont;
 } /* headings */
+
+a {
+	text-decoration: none;
+	color: inherit;
+}

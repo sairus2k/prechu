@@ -85,6 +85,12 @@ h1, h2, h3 {
 }
 
 /* headings */
+/* line 11, ../../../components/sass/_base.scss */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 /* body */
 /* line 7, ../../../components/sass/_layout.scss */
 .container {
@@ -145,15 +151,96 @@ header nav li {
 header nav li:hover {
   border-bottom: 3px solid #5094f2;
 }
-/* line 34, ../../../components/sass/modules/_header.scss */
-header nav li a {
-  text-decoration: none;
-  color: inherit;
-}
 
 /* line 1, ../../../components/sass/modules/_banner.scss */
 .banner {
-  background: #6f7173;
+  background: url("../images/background.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  position: relative;
+  overflow: auto;
+  max-height: 420px;
+}
+/* line 6, ../../../components/sass/modules/_banner.scss */
+.banner .unslider-arrow {
+  position: absolute;
+  top: 40%;
+  z-index: 10;
+}
+/* line 10, ../../../components/sass/modules/_banner.scss */
+.banner .unslider-arrow.prev {
+  left: 5%;
+}
+/* line 13, ../../../components/sass/modules/_banner.scss */
+.banner .unslider-arrow.next {
+  right: 5%;
+}
+/* line 17, ../../../components/sass/modules/_banner.scss */
+.banner ul {
+  list-style: none;
+}
+/* line 20, ../../../components/sass/modules/_banner.scss */
+.banner ul li {
+  float: left;
+}
+/* line 23, ../../../components/sass/modules/_banner.scss */
+.banner figure {
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.banner figure:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 25, ../../../components/sass/modules/_banner.scss */
+.banner figure div {
+  float: left;
+  text-align: center;
+  width: 50%;
+}
+/* line 30, ../../../components/sass/modules/_banner.scss */
+.banner figure img {
+  height: 420px;
+  padding: 35px;
+}
+/* line 36, ../../../components/sass/modules/_banner.scss */
+.banner figcaption {
+  float: right;
+  color: #ffffff;
+  font-weight: 300;
+  line-height: 2.77625em;
+  width: 50%;
+  padding-top: 140px;
+}
+/* line 43, ../../../components/sass/modules/_banner.scss */
+.banner figcaption h1 {
+  font-weight: 300;
+  line-height: inherit;
+  padding-bottom: 10px;
+}
+/* line 48, ../../../components/sass/modules/_banner.scss */
+.banner figcaption p {
+  font-size: 1.64688em;
+  line-height: inherit;
+}
+/* line 52, ../../../components/sass/modules/_banner.scss */
+.banner figcaption a {
+  background-color: #5094f2;
+  border-radius: 2px;
+  display: block;
+  width: 172px;
+  height: 41px;
+  text-align: center;
+  font-size: 1.39688em;
+  margin: 25px 15px;
+}
+/* line 62, ../../../components/sass/modules/_banner.scss */
+.banner figcaption i {
+  margin-right: 10px;
+  font-size: 23px;
 }
 
 /*# sourceMappingURL=style.css.map */
