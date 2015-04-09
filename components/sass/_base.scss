@@ -1,5 +1,9 @@
 body {
-	font-family: $fontFamily;
+	font: $mainFont;
 	color: $defaultColor;
 	background-color: $backgroundColor;
-}
+} /* body */
+
+#{headings(1, 3)} {
+	font: $headFont;
+} /* headings */

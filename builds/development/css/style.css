@@ -73,20 +73,87 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
 
 /* line 1, ../../../components/sass/_base.scss */
 body {
-  font-family: "Open Sans", sans-serif;
+  font: 400 1em/1em "Open Sans", sans-serif;
   color: #909090;
   background-color: #ffffff;
 }
 
-/* line 1, ../../../components/sass/modules/_header.scss */
-header {
-  /* h1 */
-}
-/* line 2, ../../../components/sass/modules/_header.scss */
-header h1 {
-  color: #000000;
+/* body */
+/* line 7, ../../../components/sass/_base.scss */
+h1, h2, h3 {
+  font: 400 2.64688em/2.77625em "Open Sans", sans-serif;
 }
 
-/* header */
+/* headings */
+/* body */
+/* line 7, ../../../components/sass/_layout.scss */
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+}
+
+/* container */
+/* line 1, ../../../components/sass/modules/_header.scss */
+header {
+  height: 90px;
+}
+/* line 3, ../../../components/sass/modules/_header.scss */
+header img {
+  vertical-align: middle;
+}
+/* line 6, ../../../components/sass/modules/_header.scss */
+header .logo {
+  float: left;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+header .logo:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 9, ../../../components/sass/modules/_header.scss */
+header .logo span {
+  color: #000000;
+  font-size: 2.64688em;
+  font-weight: 300;
+  padding-left: 15px;
+  line-height: 90px;
+  vertical-align: middle;
+}
+/* line 18, ../../../components/sass/modules/_header.scss */
+header nav {
+  float: right;
+  padding-top: 50px;
+  font-size: 1.27188em;
+  color: #6f7173;
+  *zoom: 1;
+}
+/* line 38, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+header nav:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 27, ../../../components/sass/modules/_header.scss */
+header nav li {
+  display: inline-block;
+  margin-right: 40px;
+  padding-bottom: 21px;
+}
+/* line 31, ../../../components/sass/modules/_header.scss */
+header nav li:hover {
+  border-bottom: 3px solid #5094f2;
+}
+/* line 34, ../../../components/sass/modules/_header.scss */
+header nav li a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* line 1, ../../../components/sass/modules/_banner.scss */
+.banner {
+  background: #6f7173;
+}
 
 /*# sourceMappingURL=style.css.map */

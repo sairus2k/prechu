@@ -1,5 +1,40 @@
 header {
-  h1 {
-    color: $dark;
-  } /* h1 */
-} /* header */
+  height: 90px;
+  img {
+    vertical-align: middle;
+  } //img
+  .logo {
+  	float: left;
+  	@include pie-clearfix;
+    span {
+      color: $dark;
+      font-size: $xxlarge;
+      font-weight: $thin;
+      padding-left: 15px;
+      line-height: 90px;
+      vertical-align: middle;
+    } //span
+  } //logo
+  nav {
+    float: right;
+    padding-top: 50px;
+    font-size: $regular;
+    color: $darkGray;
+    @include pie-clearfix;
+    ul {
+    	
+    } //ul
+    li {
+    	display: inline-block;
+    	margin-right: 40px;
+    	padding-bottom: 21px;
+    	&:hover {
+    		border-bottom: 3px solid $blue;
+    	} //hover
+    	a {
+    		text-decoration: none;
+    		color: inherit;
+    	} //a
+    } //ul
+  } //nav
+} //header
