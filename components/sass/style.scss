@@ -1,7 +1,23 @@
+
+// Compass imports
 @import "compass";
 @import "compass/reset";
 
-@import "variables";
-@import "base";
 
+// External libraries
+@import "susy";
+@import "breakpoint";
+
+
+// Core Partials
+@import "variables";
+@import "mixins";
+@import "base";
+@import "layout";
+
+// Import Modules
 @import "modules/header";
+@import "modules/banner";
+@import "modules/contrary";
+@import "modules/cart";
+@import "modules/footer";

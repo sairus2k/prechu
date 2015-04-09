@@ -1,15 +1,34 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
 
+@include border-box-sizing; //border-box for all
+
+// Color Palette
 $blue: 			#5094f2;
 $red: 			#d94748;
 $yellow: 		#ebbb11;
 $lightGray: #909090;
 $darkGray: 	#6f7173;
-$white: 		#ffffff;
-$black: 		#000000;
+$light: 		#ffffff;
+$dark: 		#000000;
 
-$backgroundColor: $white;
+$backgroundColor: $light;
 $defaultColor: $lightGray;
 
-
+// Font variables
 $fontFamily: 'Open Sans', sans-serif;
+
+//thickness
+$thin: 		300;
+$normal: 	400;
+
+//font size *16px
+$xxxlarge:		2.77625em;	// 44.42px;
+$xxlarge: 		2.646875em; // 42.35px;
+$xlarge:			2.25em;			// 36px;
+$large: 			1.646875em; // 26.35px;
+$regular: 		1.271875em; // 20.35px;
+$small: 			0.959375em; // 15.35px;
+$xsmall: 			0.896875em; // 14.35px;
+
+$mainFont: $normal $regular/$regular $fontFamily;
+$headFont: $normal $xxlarge/$xxxlarge $fontFamily;

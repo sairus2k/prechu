@@ -1,8 +1,8 @@
 .sass-cache
 *.css.map
 node_modules
-builds\development\images
-builds\production\images
+builds/development/images
+builds/production/images
 
 # cache files for sublime text
 *.tmlanguage.cache

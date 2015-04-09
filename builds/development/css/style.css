@@ -1,4 +1,4 @@
-@import url(http://fonts.googleapis.com/css?family=Open+Sans:300);
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400);
 /* line 5, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/reset/_utilities.scss */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -64,6 +64,13 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/* line 21, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/language/susy/_box-sizing.scss */
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
 /* line 1, ../../../components/sass/_base.scss */
 body {
   font-family: "Open Sans", sans-serif;
@@ -71,11 +78,11 @@ body {
   background-color: #ffffff;
 }
 
-/* line 1, ../../../components/sass/modules/header.scss */
+/* line 1, ../../../components/sass/modules/_header.scss */
 header {
   /* h1 */
 }
-/* line 2, ../../../components/sass/modules/header.scss */
+/* line 2, ../../../components/sass/modules/_header.scss */
 header h1 {
   color: #000000;
 }
