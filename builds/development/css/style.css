@@ -94,8 +94,15 @@ a {
 /* body */
 /* line 7, ../../../components/sass/_layout.scss */
 .container {
-  margin: 0 auto;
-  max-width: 1200px;
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+}
+/* line 12, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/susy-2.2.2/sass/susy/output/support/_clearfix.scss */
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
 }
 
 /* container */
@@ -104,52 +111,112 @@ header {
   height: 90px;
 }
 /* line 3, ../../../components/sass/modules/_header.scss */
-header img {
+header .logo {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 33.33333%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
+}
+/* line 7, ../../../components/sass/modules/_header.scss */
+header .logo img {
   vertical-align: middle;
 }
-/* line 6, ../../../components/sass/modules/_header.scss */
-header .logo {
-  float: left;
-  *zoom: 1;
+@media (max-width: 40em) {
+  /* line 7, ../../../components/sass/modules/_header.scss */
+  header .logo img {
+    display: none;
+  }
 }
-/* line 38, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-header .logo:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-/* line 9, ../../../components/sass/modules/_header.scss */
+/* line 14, ../../../components/sass/modules/_header.scss */
 header .logo span {
   color: #000000;
   font-size: 2.64688em;
   font-weight: 300;
-  padding-left: 15px;
+  padding-left: 1.5625%;
   line-height: 90px;
   vertical-align: middle;
 }
-/* line 18, ../../../components/sass/modules/_header.scss */
+/* line 24, ../../../components/sass/modules/_header.scss */
 header nav {
-  float: right;
-  padding-top: 50px;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 66.66667%;
+  float: left;
+  padding-left: 0.83333%;
+  padding-right: 0.83333%;
   font-size: 1.27188em;
   color: #6f7173;
-  *zoom: 1;
+  text-align: right;
 }
-/* line 38, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
-header nav:after {
-  content: "";
-  display: table;
-  clear: both;
+@media (max-width: 40em) {
+  /* line 24, ../../../components/sass/modules/_header.scss */
+  header nav {
+    position: relative;
+  }
 }
-/* line 27, ../../../components/sass/modules/_header.scss */
+/* line 36, ../../../components/sass/modules/_header.scss */
+header nav img {
+  display: none;
+  margin-top: 27px;
+  margin-right: 4.0625%;
+}
+@media (max-width: 40em) {
+  /* line 36, ../../../components/sass/modules/_header.scss */
+  header nav img {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+/* line 46, ../../../components/sass/modules/_header.scss */
+header nav ul {
+  padding-top: 50px;
+}
+@media (max-width: 40em) {
+  /* line 46, ../../../components/sass/modules/_header.scss */
+  header nav ul {
+    display: none;
+    position: absolute;
+    z-index: 10;
+    right: 5%;
+    background: #000000;
+    color: #ffffff;
+    padding: 0;
+    width: 80%;
+  }
+}
+/* line 60, ../../../components/sass/modules/_header.scss */
 header nav li {
   display: inline-block;
-  margin-right: 40px;
+  margin-right: 4.16%;
   padding-bottom: 21px;
 }
-/* line 31, ../../../components/sass/modules/_header.scss */
-header nav li:hover {
-  border-bottom: 3px solid #5094f2;
+@media (max-width: 40em) {
+  /* line 60, ../../../components/sass/modules/_header.scss */
+  header nav li {
+    display: list-item;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+  }
+  /* line 69, ../../../components/sass/modules/_header.scss */
+  header nav li:hover {
+    background: #5094f2;
+    border: 0;
+  }
+}
+@media (min-width: 40em) {
+  /* line 75, ../../../components/sass/modules/_header.scss */
+  header nav li:hover {
+    border-bottom: 3px solid #5094f2;
+  }
+  /* line 78, ../../../components/sass/modules/_header.scss */
+  header nav li:last-child {
+    margin-right: 0;
+  }
 }
 
 /* line 1, ../../../components/sass/modules/_banner.scss */

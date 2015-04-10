@@ -1,36 +1,84 @@
 header {
   height: 90px;
-  img {
-    vertical-align: middle;
-  } //img
   .logo {
-  	float: left;
-  	@include pie-clearfix;
+    // float: left;
+    // @include pie-clearfix;
+    @include span(4);
+    img {
+      vertical-align: middle;
+      @include breakpoint(max-width $small) {
+        display: none;
+      } //breakpoint small
+   
+    } //img
     span {
       color: $dark;
       font-size: $xxlarge;
       font-weight: $thin;
-      padding-left: 15px;
+      padding-left: 1.5625%;
       line-height: 90px;
       vertical-align: middle;
     } //span
+ 
   } //logo
   nav {
-    float: right;
-    padding-top: 50px;
+    // float: right;
+    @include span(8 at 4 of 12);
     font-size: $regular;
     color: $darkGray;
-    @include pie-clearfix;
+    text-align: right;
+    //@include pie-clearfix;
+    @include breakpoint(max-width $small) {
+      //?
+      position: relative;
+    }
+
+    img {
+      display: none;
+      margin-top: 27px;
+      margin-right: 4.0625%;
+      @include breakpoint(max-width $small) {
+        display: inline-block;
+        cursor: pointer;
+      } //breakpoint small
+   
+    }
     ul {
-    	
+      padding-top: 50px;
+      @include breakpoint(max-width $small) {
+        display: none;
+        position: absolute;
+        z-index: 10;
+        right: 5%;
+        background: $dark;
+        color: $light;
+        padding: 0;
+        width: 80%;
+      } //breakpoint small
+   
     } //ul
     li {
-    	display: inline-block;
-    	margin-right: 40px;
-    	padding-bottom: 21px;
-    	&:hover {
-    		border-bottom: 3px solid $blue;
-    	} //hover
+      display: inline-block;
+      margin-right: 4.16%;
+      padding-bottom: 21px;
+      @include breakpoint(max-width $small) {
+        display: list-item;
+        text-align: center;
+        margin: 0;
+        padding: 20px;
+        &:hover {
+          background: $blue;
+          border: 0;
+        } //hover
+      } //breakpoint small
+      @include breakpoint($small) {
+        &:hover {
+          border-bottom: 3px solid $blue;
+        } //hover
+        &:last-child {
+          margin-right: 0;
+        } //last-child
+      } //breakpoint min small
     } //ul
   } //nav
 } //header

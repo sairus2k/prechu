@@ -6,6 +6,7 @@ body {
 
 .container {
 	// position: relative;
-	margin: 0 auto;
-	max-width: $wide;
+	// margin: 0 auto;
+	// max-width: $wide;
+	@include container;
 } /* container */
