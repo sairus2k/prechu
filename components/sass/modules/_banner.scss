@@ -7,6 +7,9 @@
   	position: absolute;
   	top: 40%;
   	z-index: 10;
+    @include breakpoint(max-width $medium) {
+      display: none;
+    } //breakpoint medium
   	&.prev {
   		left: 5%;
   	} //prev
@@ -30,8 +33,13 @@
     img {
       height: 420px;
       padding: 35px;
+      @include breakpoint(max-width $small) {
+        height: 220px;
+      } //breakpoint small
+      @include breakpoint($small $medium) {
+        height: 320px;
+      } //breakpoint small - medium
     } //img
- 
   } //figure
   figcaption {
     float: right;
@@ -40,14 +48,36 @@
     line-height: $xxxlarge;
     width: 50%;
     padding-top: 140px;
+    @include breakpoint(max-width $small) {
+        padding-top: 20px;
+      } //breakpoint small
+    @include breakpoint($small $medium) {
+        padding-top: 50px;
+      } //breakpoint small - medium
     h1 {
       font-weight: $thin;
       line-height: inherit;
       padding-bottom: 10px;
-    }
+      @include breakpoint(max-width $small) {
+        font-size: $large;
+        line-height: $regular;
+      } //breakpoint
+      @include breakpoint($small $medium) {
+        font-size: $xlarge;
+        line-height: $xregular;
+      } //breakpoint small - medium
+    } //h1
     p {
       font-size: $large;
       line-height: inherit;
+      @include breakpoint(max-width $small) {
+        font-size: $regular;
+        line-height: $regular;
+      } //breakpoint
+      @include breakpoint($small $medium) {
+        font-size: $xregular;
+        line-height: $xregular;
+      } //breakpoint small - medium
     } //p
     a {
       background-color: $blue;
