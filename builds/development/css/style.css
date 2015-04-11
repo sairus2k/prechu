@@ -428,11 +428,17 @@ header nav li {
 .contrary .image {
   background-repeat: no-repeat;
   background-position: center;
-  background-size: auto 80px;
+  background-size: auto 60px;
   border-radius: 50%;
   width: 135px;
   height: 135px;
   margin: auto;
+}
+@media (max-width: 25em) {
+  /* line 38, ../../../components/sass/modules/_contrary.scss */
+  .contrary .image {
+    display: none;
+  }
 }
 @media (max-width: 40em) {
   /* line 38, ../../../components/sass/modules/_contrary.scss */
@@ -441,28 +447,101 @@ header nav li {
   }
 }
 @media (max-width: 40em) {
-  /* line 51, ../../../components/sass/modules/_contrary.scss */
+  /* line 53, ../../../components/sass/modules/_contrary.scss */
   .contrary .caption {
     float: left;
     width: 60%;
     margin-left: 20px;
     margin-top: 20px;
+    font-size: 0.89688em;
   }
 }
-/* line 59, ../../../components/sass/modules/_contrary.scss */
+/* line 62, ../../../components/sass/modules/_contrary.scss */
 .contrary .pencil .image {
   background-image: url("../images/pencil.png");
   background-color: #5094f2;
 }
-/* line 63, ../../../components/sass/modules/_contrary.scss */
+/* line 66, ../../../components/sass/modules/_contrary.scss */
 .contrary .desktop .image {
   background-image: url("../images/desktop.png");
   background-color: #d94748;
 }
-/* line 67, ../../../components/sass/modules/_contrary.scss */
+/* line 70, ../../../components/sass/modules/_contrary.scss */
 .contrary .bucket .image {
   background-image: url("../images/bucket.png");
   background-color: #ebbb11;
+}
+
+/* line 1, ../../../components/sass/modules/_cart.scss */
+.cart {
+  padding-top: 30px;
+}
+/* line 3, ../../../components/sass/modules/_cart.scss */
+.cart h2, .cart h3 {
+  color: #6f7173;
+  font-size: 2.25em;
+  line-height: 44.42px;
+  padding-bottom: 20px;
+}
+/* line 9, ../../../components/sass/modules/_cart.scss */
+.cart h3 {
+  font-size: 1.64688em;
+}
+/* line 12, ../../../components/sass/modules/_cart.scss */
+.cart p {
+  color: #909090;
+  line-height: 2.25em;
+}
+/* line 16, ../../../components/sass/modules/_cart.scss */
+.cart .left {
+  text-align: center;
+}
+/* line 18, ../../../components/sass/modules/_cart.scss */
+.cart .left img {
+  width: 30%;
+  max-width: 370px;
+}
+@media (min-width: 40em) {
+  /* line 16, ../../../components/sass/modules/_cart.scss */
+  .cart .left {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+  /* line 24, ../../../components/sass/modules/_cart.scss */
+  .cart .left img {
+    width: 100%;
+  }
+}
+/* line 29, ../../../components/sass/modules/_cart.scss */
+.cart .right {
+  padding: 5%;
+}
+@media (min-width: 40em) {
+  /* line 29, ../../../components/sass/modules/_cart.scss */
+  .cart .right {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/* line 1, ../../../components/sass/modules/_footer.scss */
+footer {
+  text-align: center;
+  border-top: 1px solid #cccccc;
+}
+/* line 4, ../../../components/sass/modules/_footer.scss */
+footer p {
+  margin: 35px;
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -38,12 +38,14 @@
 	.image {
 		background-repeat: no-repeat;
 		background-position: center;
-		background-size: auto 80px;
+		background-size: auto 60px;
 		border-radius: 50%;
 		width: 135px;
 		height: 135px;
 		margin: auto;
-
+		@include breakpoint(max-width $narrow) {
+			display: none;
+		} //breakpoint narrow
 		@include breakpoint(max-width $small) {
 			float: left;
 		} //breakpoint small
@@ -54,6 +56,7 @@
 			width: 60%;
 			margin-left: 20px;
 			margin-top: 20px;
+			font-size: $xsmall;
 		} //breakpoint small
 	} //caption
 	.pencil .image {

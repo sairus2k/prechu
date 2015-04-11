@@ -1,0 +1,35 @@
+ .cart {
+ 	padding-top: 30px;
+ #{headings(2, 3)} {
+ 		color: $darkGray;
+ 		font-size: $xlarge;
+ 		line-height: 44.42px;
+ 		padding-bottom: 20px;
+ 	} //headings
+ 	h3 {
+ 		font-size: $large;
+ 	} //h3
+ 	p {
+ 		color: $lightGray;
+ 		line-height: $xlarge;
+ 	} //p
+ 	.left {
+ 		text-align: center;
+ 		img {
+ 			width: 30%;
+ 			max-width: 370px;
+ 		} //img
+ 		@include breakpoint ($small) {
+ 			@include span(6);
+ 			img {
+ 				width: 100%;
+ 			} //img
+ 		} //breakpoint small
+ 	} //left
+ 	.right {
+ 		padding: 5%;
+ 		@include breakpoint ($small) {
+ 			@include span(6 at 6 of 12);
+ 		} //breakpoint small
+ 	} //right
+ }// cart
