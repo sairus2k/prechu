@@ -16,7 +16,7 @@ htmlSources,
 outputDir,
 sassStyle;
 
-env = 'development';
+env = 'production';
 
 if (env === 'development') {
   outputDir = 'builds/development/';
@@ -29,7 +29,6 @@ if (env === 'development') {
 }
 
 jsSources = [
-//'components/scripts/jqloader.js',
 'components/scripts/unslider.min.js',
 'components/scripts/script.js'
 ];
