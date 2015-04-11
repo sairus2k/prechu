@@ -291,7 +291,7 @@ header nav li {
     height: 320px;
   }
 }
-/* line 45, ../../../components/sass/modules/_banner.scss */
+/* line 44, ../../../components/sass/modules/_banner.scss */
 .banner figcaption {
   float: right;
   color: #ffffff;
@@ -301,57 +301,57 @@ header nav li {
   padding-top: 140px;
 }
 @media (max-width: 40em) {
-  /* line 45, ../../../components/sass/modules/_banner.scss */
+  /* line 44, ../../../components/sass/modules/_banner.scss */
   .banner figcaption {
     padding-top: 20px;
   }
 }
 @media (min-width: 40em) and (max-width: 60em) {
-  /* line 45, ../../../components/sass/modules/_banner.scss */
+  /* line 44, ../../../components/sass/modules/_banner.scss */
   .banner figcaption {
     padding-top: 50px;
   }
 }
-/* line 58, ../../../components/sass/modules/_banner.scss */
+/* line 57, ../../../components/sass/modules/_banner.scss */
 .banner figcaption h1 {
   font-weight: 300;
   line-height: inherit;
   padding-bottom: 10px;
 }
 @media (max-width: 40em) {
-  /* line 58, ../../../components/sass/modules/_banner.scss */
+  /* line 57, ../../../components/sass/modules/_banner.scss */
   .banner figcaption h1 {
     font-size: 1.64688em;
     line-height: 1.27188em;
   }
 }
 @media (min-width: 40em) and (max-width: 60em) {
-  /* line 58, ../../../components/sass/modules/_banner.scss */
+  /* line 57, ../../../components/sass/modules/_banner.scss */
   .banner figcaption h1 {
     font-size: 2.25em;
     line-height: 1.39688em;
   }
 }
-/* line 71, ../../../components/sass/modules/_banner.scss */
+/* line 70, ../../../components/sass/modules/_banner.scss */
 .banner figcaption p {
   font-size: 1.64688em;
   line-height: inherit;
 }
 @media (max-width: 40em) {
-  /* line 71, ../../../components/sass/modules/_banner.scss */
+  /* line 70, ../../../components/sass/modules/_banner.scss */
   .banner figcaption p {
     font-size: 1.27188em;
     line-height: 1.27188em;
   }
 }
 @media (min-width: 40em) and (max-width: 60em) {
-  /* line 71, ../../../components/sass/modules/_banner.scss */
+  /* line 70, ../../../components/sass/modules/_banner.scss */
   .banner figcaption p {
     font-size: 1.39688em;
     line-height: 1.39688em;
   }
 }
-/* line 83, ../../../components/sass/modules/_banner.scss */
+/* line 82, ../../../components/sass/modules/_banner.scss */
 .banner figcaption a {
   background-color: #5094f2;
   border-radius: 2px;
@@ -362,10 +362,107 @@ header nav li {
   font-size: 1.39688em;
   margin: 25px 15px;
 }
-/* line 93, ../../../components/sass/modules/_banner.scss */
+/* line 92, ../../../components/sass/modules/_banner.scss */
 .banner figcaption i {
   margin-right: 10px;
   font-size: 23px;
+}
+
+/* line 2, ../../../components/sass/modules/_contrary.scss */
+.contrary h3 {
+  color: #5094f2;
+  font-size: 1.27188em;
+  line-height: 1.27188em;
+}
+@media (max-width: 40em) {
+  /* line 2, ../../../components/sass/modules/_contrary.scss */
+  .contrary h3 {
+    font-size: 1.64688em;
+    line-height: 1.64688em;
+  }
+}
+@media (min-width: 40em) {
+  /* line 2, ../../../components/sass/modules/_contrary.scss */
+  .contrary h3 {
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 10px;
+  }
+}
+/* line 16, ../../../components/sass/modules/_contrary.scss */
+.contrary p {
+  font-size: 0.95938em;
+  line-height: 0.95938em;
+}
+@media (min-width: 40em) {
+  /* line 16, ../../../components/sass/modules/_contrary.scss */
+  .contrary p {
+    text-align: center;
+    line-height: 1.27188em;
+  }
+}
+/* line 24, ../../../components/sass/modules/_contrary.scss */
+.contrary .container > div {
+  padding: 10px;
+  padding-top: 50px;
+  width: 33.3333%;
+  float: left;
+  *zoom: 1;
+}
+@media (max-width: 40em) {
+  /* line 24, ../../../components/sass/modules/_contrary.scss */
+  .contrary .container > div {
+    border-bottom: 1px solid #cccccc;
+    padding: 40px;
+    padding-bottom: 30px;
+    width: 100%;
+  }
+}
+/* line 38, ../../../../../../../tools/ruby215/lib/ruby/gems/2.1.0/gems/compass-core-1.0.3/stylesheets/compass/utilities/general/_clearfix.scss */
+.contrary .container > div:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+/* line 38, ../../../components/sass/modules/_contrary.scss */
+.contrary .image {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: auto 80px;
+  border-radius: 50%;
+  width: 135px;
+  height: 135px;
+  margin: auto;
+}
+@media (max-width: 40em) {
+  /* line 38, ../../../components/sass/modules/_contrary.scss */
+  .contrary .image {
+    float: left;
+  }
+}
+@media (max-width: 40em) {
+  /* line 51, ../../../components/sass/modules/_contrary.scss */
+  .contrary .caption {
+    float: left;
+    width: 60%;
+    margin-left: 20px;
+    margin-top: 20px;
+  }
+}
+/* line 59, ../../../components/sass/modules/_contrary.scss */
+.contrary .pencil .image {
+  background-image: url("../images/pencil.png");
+  background-color: #5094f2;
+}
+/* line 63, ../../../components/sass/modules/_contrary.scss */
+.contrary .desktop .image {
+  background-image: url("../images/desktop.png");
+  background-color: #d94748;
+}
+/* line 67, ../../../components/sass/modules/_contrary.scss */
+.contrary .bucket .image {
+  background-image: url("../images/bucket.png");
+  background-color: #ebbb11;
 }
 
 /*# sourceMappingURL=style.css.map */

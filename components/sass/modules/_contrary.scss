@@ -1,0 +1,71 @@
+.contrary {
+	h3 {
+		color: $blue;
+		font-size: $regular;
+		line-height: $regular;
+		@include breakpoint(max-width $small) {
+			font-size: $large;
+			line-height: $large;
+		} //breakpoint small
+		@include breakpoint($small) {
+			text-align: center;
+			padding-top: 15px;
+			padding-bottom: 10px;
+		} //breakpoint over small
+	} //h1
+	p {
+		font-size: $smallFt;
+		line-height: $smallFt;
+		@include breakpoint($small) {
+			text-align: center;
+			line-height: $regular;
+		} //breakpoint over small
+	} //p
+	.container>div {
+		@include breakpoint(max-width $small) {
+			border-bottom: 1px solid $gray;
+			padding: 40px;
+			padding-bottom: 30px;
+			width: 100%;
+		} //breakpoint small
+		padding: 10px;
+		padding-top: 50px;
+		width: 33.3333%;
+		float: left;
+		@include pie-clearfix;
+		
+	} //container div
+	.image {
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: auto 80px;
+		border-radius: 50%;
+		width: 135px;
+		height: 135px;
+		margin: auto;
+
+		@include breakpoint(max-width $small) {
+			float: left;
+		} //breakpoint small
+	} //image
+	.caption {
+		@include breakpoint(max-width $small) {
+			float: left;
+			width: 60%;
+			margin-left: 20px;
+			margin-top: 20px;
+		} //breakpoint small
+	} //caption
+	.pencil .image {
+		background-image: url("../images/pencil.png");
+		background-color: $blue;
+	} //pencil
+	.desktop .image {
+		background-image: url("../images/desktop.png");
+		background-color: $red;
+	} //pencil
+	.bucket .image {
+		background-image: url("../images/bucket.png");
+		background-color: $yellow;
+	} //pencil
+} //countrary
